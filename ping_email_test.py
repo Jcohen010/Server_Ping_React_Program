@@ -69,6 +69,7 @@ else:
                             '''
     }
 
+    # new mail object must be created for each email, hence iteration through email_dict
     for recipient, message in email_dict.items():
         outlook = win32com.client.Dispatch('outlook.application')
         mail = outlook.CreateItem(0)
