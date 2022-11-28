@@ -9,7 +9,7 @@ from functions.logging_insert_db import insert_db
 
 
 #fetch dbcredentials
-credsfile = r"C:\Users\jcohen\Documents\ping_email_script\secrets.toml"
+credsfile = r"C:\Users\jcohen\Documents\ping_email_script\creds.toml"
 content  = toml.load(credsfile)
 conn_string = content['connection_string']
 local_ip = content['local_ip']
